@@ -83,11 +83,11 @@ def main():
         try:
             subprocess.run(
                 [
-                    "python",                # or "python3"
+                    "python",               
                     "clamp3_embd.py",
-                    "--get-global",          #  ← the new flag goes here
                     str(chunk_in),
                     str(chunk_out),
+                    "--get-global"        
                 ],
                 check=True
             )
